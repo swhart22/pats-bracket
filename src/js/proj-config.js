@@ -84,6 +84,7 @@ getWorkbook(metadata['key']).then(workbook => {
 				o['url'] = s['url'];
 				o['description'] = s['description'];
 				o['photo cred'] = s['photocred'];
+				o['content type'] = s['contenttype']
 				keys.push(o)
 			});
 			

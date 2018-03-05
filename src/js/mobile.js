@@ -191,7 +191,7 @@ function mobile(data){
 			.append('div')
 			.text(d => {return d.values[0]['Competitor - Round 4']})
 			.attr('class','labels winnerlabel')
-			.style('top', 490 + 'px')
+			.style('top', 525 + 'px')
 			.style('left', 100 + 'px');
 
 	};
