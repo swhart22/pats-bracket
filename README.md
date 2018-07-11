@@ -54,3 +54,5 @@ If you are having trouble loading data or otherwise getting the bracket to work,
 * If an image isn't showing up, make sure the "TYPE" column in sheet 2 is set to "PHOTO." Same if an embed or youtube embed isn't working.
 
 * If polls are not the right height, you can update the `pollHeight` variable in `proj-config.js`
+
+* If the local server isn't working during development, make sure you don't have a different project running on the same port.
