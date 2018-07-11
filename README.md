@@ -51,3 +51,6 @@ If you are having trouble loading data or otherwise getting the bracket to work,
 
 * All polls for a particular round are created and are the right ID (the bracket won't reflect the proper round unless there are exactly the correct number of unique values in the proper poll ID column)
 
+* If an image isn't showing up, make sure the "TYPE" column in sheet 2 is set to "PHOTO." Same if an embed or youtube embed isn't working.
+
+* If polls are not the right height, you can update the `pollHeight` variable in `proj-config.js`

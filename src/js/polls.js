@@ -162,7 +162,7 @@ function polls(data, keys){
 						'<p class="img-credit">'+cred1+'</p>';
 					}
 					else{
-						return '<p class="poll-title">'+p['values'][1][competitorRound]+'</p>';
+						return '<p class="poll-title">'+p['values'][0][competitorRound]+'</p>';
 					}
 				});
 
