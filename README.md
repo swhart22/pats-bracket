@@ -21,7 +21,7 @@ You now want to link up your project's spreadsheet with the project. Change the 
 
 You should also specify here whether the bracket is a 16- or 32- seed. The code is designed to take the first 16 or 32 rows of whatever dataset on that basis. It will still work if there aren't those exact numbers of items in the sheet, but make sure there are. 
 
-See a sample sheet here: https://docs.google.com/spreadsheets/d/1R8A_X3mQl872Cwroc947SAtFyw7xyqW3m_BJNU3sLjM/edit#gid=0 
+See a sample sheet here: https://docs.google.com/spreadsheets/d/1JrYQgcOyRK6BhHS-U8zuZXKxTLNw4vQy2TJkp6pFjAE/edit?usp=drive_web&ouid=111040563938944466723
 
 Keep the header values the same, and in the columns that include data validation, you need to make sure those values are the ones in your spreadsheet as well, or else the code won't work.
 
@@ -38,3 +38,16 @@ npm run build
 Open the root folder of your directory, and you'll now see a 'dist' folder. The files inside are the ones you need to push to the server. Webpack has bundled everything into minimally-sized files to make you and everyone's browsers' lives easier!
 
 Test the `index.html` file in your browser just to make sure everything worked, and then push to the server. 
+
+## Troubleshooting
+
+If you are having trouble loading data or otherwise getting the bracket to work, make sure: 
+
+* The Google Spreadsheet you're working with is set to public
+
+* The Google Spreadsheet you're working with contains a second sheet that is a list of each contender (if this sheet isn't there, the bracket won't work)
+
+	* Additionally, make sure that the name of the contender in sheet 1 is exactly the same as the name in sheet 2, or else the code won't match them up (no spaces at the end, etc.)
+
+* All polls for a particular round are created and are the right ID (the bracket won't reflect the proper round unless there are exactly the correct number of unique values in the proper poll ID column)
+
